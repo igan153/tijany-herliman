@@ -10,7 +10,7 @@ export default function Project() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
             <img
               alt="Project 1"
-              src="/img/1.png"
+              src="/img/project.webp"
               className="h-80 w-full object-cover"
             />
           </div>

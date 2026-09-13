@@ -19,11 +19,11 @@ export default function Hero() {
               <div className="flex-1">
                 <div className="flex flex-col items-center gap-3 text-center sm:items-start sm:text-left">
                   <div className="flex items-center gap-2">
-                    <h1 className="text-3xl font-semibold sm:text-4xl">igan1203</h1>
+                    <h1 className="text-3xl font-semibold sm:text-4xl">tijany herliman</h1>
                     <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs text-gray-200">◌</span>
                   </div>
 
-                  <div className="text-lg text-gray-300">igan</div>
+                  <div className="text-lg text-gray-300">tijanyherliman</div>
 
                   <div className="flex items-center gap-8 text-sm text-gray-300 sm:text-base">
                     <span><strong className="text-white">2</strong> posts</span>
