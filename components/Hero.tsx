@@ -1,65 +1,61 @@
 export default function Hero() {
-
-
   return (
-    <div className="bg-gray-900">
+    <div className="bg-[#0b0d12] text-white">
+      <div className="relative isolate min-h-[70vh] px-6 pt-20 lg:px-8">
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(88,90,125,0.20),_transparent_45%)]" />
 
+        <div className="mx-auto max-w-5xl py-10 sm:py-16">
+          <div className="mx-auto max-w-3xl rounded-[28px] border border-white/10 bg-[#10141b]/90 px-6 py-10 shadow-[0_0_30px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:px-10">
+            <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="relative">
+                <div className="absolute -top-1 right-0 h-4 w-4 rounded-full border-2 border-[#10141b] bg-[#d7d7d7]" />
+                <img
+                  src="/img/profile.webp"
+                  alt="igan profile"
+                  className="h-32 w-32 rounded-full border-4 border-[#d6d8df] object-cover shadow-lg shadow-black/30 sm:h-36 sm:w-36"
+                />
+              </div>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-            className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
-          />
-        </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Creator & Progammer.{' '}
-              <a href="#" className="font-semibold text-indigo-400">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
+              <div className="flex-1">
+                <div className="flex flex-col items-center gap-3 text-center sm:items-start sm:text-left">
+                  <div className="flex items-center gap-2">
+                    <h1 className="text-3xl font-semibold sm:text-4xl">igan1203</h1>
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white/20 bg-white/5 text-xs text-gray-200">◌</span>
+                  </div>
+
+                  <div className="text-lg text-gray-300">igan</div>
+
+                  <div className="flex items-center gap-8 text-sm text-gray-300 sm:text-base">
+                    <span><strong className="text-white">2</strong> posts</span>
+                    <span><strong className="text-white">25</strong> followers</span>
+                    <span><strong className="text-white">20</strong> following</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              <button className="rounded-xl bg-[#2b2f38] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#343b45]">
+                Edit profile
+              </button>
+              <button className="rounded-xl bg-[#2b2f38] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#343b45]">
+                View archive
+              </button>
+            </div>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#111821] p-2">
+                <div className="flex h-44 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#1d2b43,#151d2a)] text-4xl text-white/80">
+                  <img src="/img/profile.webp" alt="volunteer" className="h-full w-full rounded-xl object-cover" />
+                </div>
+                <div className="mt-3 text-center text-sm text-gray-300">volunteer</div>
+              </div>
+
+              <div className="flex items-center justify-center overflow-hidden rounded-2xl border border-dashed border-white/15 bg-[#111821] p-2 text-white/70">
+                <div className="flex h-44 w-full items-center justify-center rounded-xl border border-white/10 bg-[#151b24] text-6xl">+</div>
+              </div>
             </div>
           </div>
-          <div className="text-center">
-            <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-              Safaraz Qia Ayyashi
-            </h1>
-            <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Get started
-              </a>
-              <a href="#" className="text-sm/6 font-semibold text-white">
-                Learn more <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-            className="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75"
-          />
         </div>
       </div>
     </div>
