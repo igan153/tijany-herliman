@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Project() {
   return (
     <div className="bg-gray-900 py-24 sm:py-32" id="projects">
@@ -8,25 +10,31 @@ export default function Project() {
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3">
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <img
+            <Image
               alt="Project 1"
               src="/img/project.webp"
+              width={800}
+              height={640}
               className="h-80 w-full object-cover"
             />
           </div>
 
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <img
+            <Image
               alt="Project 2"
               src="/img/2.png"
+              width={800}
+              height={640}
               className="h-80 w-full object-cover"
             />
           </div>
 
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <img
+            <Image
               alt="Project 3"
               src="/img/3.jpg"
+              width={800}
+              height={640}
               className="h-80 w-full object-cover"
             />
           </div>

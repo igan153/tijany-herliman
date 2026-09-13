@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useState, type MouseEvent } from 'react';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -36,9 +37,11 @@ export default function Header() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
+              <Image
+                alt="Company mark"
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                width={32}
+                height={32}
                 className="h-8 w-auto"
               />
             </a>
@@ -72,9 +75,11 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img
-                  alt=""
+                <Image
+                  alt="Company mark"
                   src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                  width={32}
+                  height={32}
                   className="h-8 w-auto"
                 />
               </a>

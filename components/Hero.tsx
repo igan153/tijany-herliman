@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Hero() {
   return (
     <div className="bg-[#0b0d12] text-white">
@@ -9,9 +11,12 @@ export default function Hero() {
             <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="relative">
                 <div className="absolute -top-1 right-0 h-4 w-4 rounded-full border-2 border-[#10141b] bg-[#d7d7d7]" />
-                <img
+                <Image
                   src="/img/profile.webp"
                   alt="igan profile"
+                  width={144}
+                  height={144}
+                  priority
                   className="h-32 w-32 rounded-full border-4 border-[#d6d8df] object-cover shadow-lg shadow-black/30 sm:h-36 sm:w-36"
                 />
               </div>
@@ -46,7 +51,7 @@ export default function Hero() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#111821] p-2">
                 <div className="flex h-44 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#1d2b43,#151d2a)] text-4xl text-white/80">
-                  <img src="/img/profile.webp" alt="volunteer" className="h-full w-full rounded-xl object-cover" />
+                  <Image src="/img/profile.webp" alt="volunteer" width={640} height={360} className="h-full w-full rounded-xl object-cover" />
                 </div>
                 <div className="mt-3 text-center text-sm text-gray-300">volunteer</div>
               </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 
 const features = [
@@ -47,7 +48,7 @@ export default function About() {
               </dl>
             </div>
           </div>
-          <img
+          <Image
             alt="Profile portrait"
             src="/img/profile.webp"
             width={1200}
